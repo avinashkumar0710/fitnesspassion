@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Fitness Passion Gym</title>
+    <link rel="stylesheet" href="style.css?v=21">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 50px; align-items: stretch; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .form-control { width: 100%; background: var(--surface-light); border: 1px solid var(--glass-border); padding: 15px; color: var(--white); font-family: 'Poppins', sans-serif; border-radius: 4px; transition: var(--transition); box-sizing: border-box; }
+        .form-control:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 10px rgba(255,46,0,0.2); }
+        .info-card { margin-bottom: 30px; display: flex; gap: 20px; align-items: flex-start; }
+        .info-card i { color: var(--primary); font-size: 1.5rem; font-style: normal; }
+        .info-card h4 { color: var(--white); font-size: 1.1rem; margin-bottom: 5px; }
+        .info-card p { color: var(--text-muted); font-size: 0.95rem; }
+        @media (max-width: 900px) { 
+            .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+            .glass-card { padding: 20px; }
+            body { overflow-x: hidden; }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo_gym_transparent.png">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="section-padding" style="margin-top: 80px;">
+        <div class="container">
+            <div class="text-center fade-up">
+                <span class="section-subtitle" style="justify-content: center;">Take the First Step</span>
+                <h1 class="section-title">CONTACT <span>US</span></h1>
+            </div>
+            
+            <div style="width: 100%; height: 300px; border-radius: 4px; overflow: hidden; margin: 40px 0 60px; border: 1px solid var(--glass-border); box-shadow: var(--glow);" class="fade-up">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(50%);" alt="Gym Floor Equipment - Deadlift Zone">
+            </div>
+            
+            <div class="contact-grid">
+                <div class="glass-card fade-up">
+                    <h2 style="margin-bottom: 30px;">SEND A TRANSMISSION</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" placeholder="YOUR NAME">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="+91 XXXX XXXXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="5" placeholder="HOW CAN WE HELP YOU CRUSH YOUR GOALS?"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="width: 100%;">SEND MESSAGE</button>
+                    </form>
+                </div>
+                
+                <div class="fade-up" style="transition-delay: 0.2s;">
+                    <h2 style="margin-bottom: 30px; font-family: 'Oswald', sans-serif; letter-spacing: 2px;">HQ DETAILS</h2>
+                    
+                    <div class="info-card">
+                        <i>📍</i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Plot no.6, Main Street, 1, Shakti Vihar Rd, Risali, Bhilai, Chhattisgarh 490006</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i>📞</i>
+                        <div>
+                            <h4>Comms</h4>
+                            <p>+91 77228 27265<br>+91 98935 20072</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i>⏱️</i>
+                        <div>
+                            <h4>Operating Hours</h4>
+                            <p>Mon - Sat: 6:00 AM - 10:00 PM<br>Sun: 7:00 AM - 11:00 AM</p>
+                        </div>
+                    </div>
+                    
+                    <div style="width: 100%; height: 250px; border-radius: 4px; overflow: hidden; border: 1px solid var(--glass-border); margin-top: 40px; box-shadow: var(--glow);">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14878.89269458938!2d81.3323!3d21.1681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293dfdfdfdfdfdf%3A0xdfdfdfdfdfdfdfdf!2sFitness%20Passion%20Gym!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; filter: grayscale(80%) invert(90%) contrast(1.2);" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glass-card fade-up" style="margin-top: 60px;">
+                <h2 style="margin-bottom: 20px; color: var(--white); font-family: 'Oswald', sans-serif;">WHAT TO <span style="color: var(--primary);">EXPECT</span> ON YOUR FIRST VISIT</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">When you walk through the doors, expect high energy and loud music. We recommend signing up for a guest pass using the form above so one of our trainers can lock in a guided tour of the facility and discuss your specific fitness goals prior to any commitment.</p>
+                <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-top: 10px;">Please bring a fresh towel, indoor lifting shoes, and proper hydration.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <button id="scroll-to-top" title="Return to Top"><i>↑</i></button>
+    <script src="script.js"></script>
+</body>
+</html>

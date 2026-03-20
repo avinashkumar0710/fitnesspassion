@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | Fitness Passion Gym</title>
+    <link rel="stylesheet" href="style.css?v=21">
+    <style>
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .review-card {
+            background: var(--surface);
+            padding: 40px 30px;
+            border-radius: 4px;
+            border: 1px solid var(--glass-border);
+            position: relative;
+            transition: var(--transition);
+        }
+        .review-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: var(--glow);
+        }
+        .review-card::before {
+            content: "”";
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 5rem;
+            color: var(--glass-border);
+            font-family: serif;
+            line-height: 1;
+        }
+        .rating {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        .review-text {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .reviewer-name {
+            font-family: 'Oswald', sans-serif;
+            color: var(--white);
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo_gym_transparent.png">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="section-padding" style="margin-top: 80px;">
+        <div class="container">
+            <div class="text-center fade-up">
+                <span class="section-subtitle" style="justify-content: center;">Real Results. Real People.</span>
+                <h1 class="section-title">MEMBER <span>REVIEWS</span></h1>
+            </div>
+            
+            <div style="width: 100%; height: 300px; border-radius: 4px; overflow: hidden; margin: 40px 0 60px; border: 1px solid var(--glass-border); box-shadow: var(--glow);" class="fade-up">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(50%);" alt="Gym Equipment Floor">
+            </div>
+            
+            <div class="review-grid">
+                <div class="review-card fade-up">
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"One of the best Gyms in Bhilai. Friendly environment and very helpful Trainers. Specially Gaurav bhaiya who guides everyone personally."</p>
+                    <div class="reviewer-name">Rahul S.</div>
+                </div>
+                
+                <div class="review-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"The machines are top notch and the atmosphere is very motivating. I've seen great results in just 3 months. Highly recommended!"</p>
+                    <div class="reviewer-name">Priya M.</div>
+                </div>
+                
+                <div class="review-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"Best gym in Risali area. Proper ventilation, great crowd, and very hygienic. The new equipment is a great addition."</p>
+                    <div class="reviewer-name">Suraj V.</div>
+                </div>
+
+                <div class="review-card fade-up">
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"Affordable fees with premium facilities. Steam bath is amazing after a heavy workout. Trainers are very supportive."</p>
+                    <div class="reviewer-name">Vikash T.</div>
+                </div>
+
+                <div class="review-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"Joined perfectly tailored personal training. The diet plan they provide actually works. The best fitness center experience so far."</p>
+                    <div class="reviewer-name">Anjali P.</div>
+                </div>
+
+                <div class="review-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"Spacious setup and no waiting for machines even during peak hours. Great loud music that keeps the energy high!"</p>
+                    <div class="reviewer-name">Karan D.</div>
+                </div>
+            </div>
+            
+            <div class="glass-card fade-up" style="margin-top: 80px; text-align: center;">
+                <h2 style="margin-bottom: 20px;">READY TO CREATE YOUR OWN SUCCESS STORY?</h2>
+                <a href="pricing.html" class="btn btn-primary">JOIN THE CULT TODAY</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <button id="scroll-to-top" title="Return to Top"><i>↑</i></button>
+    <script src="script.js"></script>
+</body>
+</html>

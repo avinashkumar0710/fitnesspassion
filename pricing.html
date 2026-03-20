@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Fitness Passion Gym</title>
+    <link rel="stylesheet" href="style.css?v=21">
+    <style>
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+        .pricing-card { background: var(--surface); border: 1px solid var(--glass-border); padding: 50px 40px; text-align: center; border-radius: 4px; transition: var(--transition); position: relative; overflow: hidden; }
+        .pricing-card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: var(--glow); z-index: 10; }
+        .pricing-card.popular { background: linear-gradient(180deg, var(--surface-light) 0%, var(--surface) 100%); border-top: 4px solid var(--primary); }
+        .pricing-card .price { font-size: 4rem; font-family: 'Oswald', sans-serif; font-weight: 800; color: var(--white); margin: 20px 0; line-height: 1; }
+        .pricing-card .price span { font-size: 1rem; color: var(--text-muted); font-family: 'Poppins', sans-serif; font-weight: 400; display: block; margin-top: 10px; }
+        .pricing-features { text-align: left; margin: 30px 0; border-top: 1px solid var(--glass-border); padding-top: 30px; }
+        .pricing-features li { margin-bottom: 15px; color: var(--text-muted); display: flex; align-items: center; gap: 10px; }
+        .pricing-features li::before { content: '✓'; color: var(--primary); font-weight: bold; }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo_gym_transparent.png">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="section-padding" style="margin-top: 80px;">
+        <div class="container">
+            <div class="text-center fade-up">
+                <span class="section-subtitle" style="justify-content: center;">No Hidden Fees</span>
+                <h1 class="section-title">MEMBERSHIP <span>PLANS</span></h1>
+            </div>
+            
+            <div style="width: 100%; height: 300px; border-radius: 4px; overflow: hidden; margin: 40px 0 60px; border: 1px solid var(--glass-border); box-shadow: var(--glow);" class="fade-up">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(50%);" alt="Gym Floor Overview">
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Basic -->
+                <div class="pricing-card fade-up">
+                    <h3 style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;">Monthly</h3>
+                    <div class="price">₹1,500<span>/mo</span></div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Full gym access during operating hours</li>
+                            <li>Cardio & Strength Zones</li>
+                            <li>Standard Diet Plan</li>
+                            <li>Locker facility (Daily basis)</li>
+                            <li>Basic Measurement Tracking</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">START NOW</a>
+                </div>
+                
+                <!-- Advanced -->
+                <div class="pricing-card popular fade-up" style="transition-delay: 0.1s;">
+                    <div style="position: absolute; top: 15px; right: -30px; background: var(--primary); color: var(--secondary); padding: 5px 40px; transform: rotate(45deg); font-weight: 800; font-size: 0.8rem; letter-spacing: 2px;">POPULAR</div>
+                    <h3 style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px;">Quarterly</h3>
+                    <div class="price">₹4,000<span>/3 months</span></div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Full gym access & priority booking</li>
+                            <li>CrossFit / Functional Area access</li>
+                            <li>Advanced Custom Diet Plan</li>
+                            <li>Steam Bath Access (2x/week)</li>
+                            <li>BCA Complete Analysis every month</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">START NOW</a>
+                </div>
+                
+                <!-- Annual -->
+                <div class="pricing-card fade-up" style="transition-delay: 0.2s;">
+                    <h3 style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;">Annual</h3>
+                    <div class="price">₹12,000<span>/year</span></div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>All Gym Facilities & zones unlimited</li>
+                            <li>Unlimited Steam Bath</li>
+                            <li>Custom Diet Plan & direct trainer line</li>
+                            <li>2 Guest Passes/Month</li>
+                            <li>Free Membership Pause (up to 1 mo)</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">START NOW</a>
+                </div>
+            </div>
+            
+            <div class="glass-card fade-up" style="margin-top: 60px; text-align: center;">
+                <h2 style="margin-bottom: 20px;">PERSONAL TRAINING <span style="color: var(--primary);">AVAILABLE</span></h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px;">Accelerate your results with 1-on-1 coaching starting at ₹5,000/month. Includes daily tracking, form correction, and macro counseling.</p>
+                <a href="trainers.html" class="btn btn-outline">MEET OUR COACHES</a>
+            </div>
+            
+            <div style="margin-top: 80px; text-align: center;" class="fade-up">
+                <h3 style="color: var(--white); margin-bottom: 20px;">CORPORATE & GROUP DISCOUNTS</h3>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">Joining with a squad? We offer a flat 15% discount for groups of 4 or more, and special arrangements for corporate tie-ups.</p>
+                <a href="contact.html" style="color: var(--primary); display: inline-block; margin-top: 10px;text-transform: uppercase; letter-spacing: 1px; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--primary);">Inquire for Group Rates ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <button id="scroll-to-top" title="Return to Top"><i>↑</i></button>
+    <script src="script.js"></script>
+</body>
+</html>
